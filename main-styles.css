@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    background-image: url(about-us-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 800px;
+    border-bottom: 8px solid rgba(77, 16, 158, 0.6);
+}
+
+.card1 {
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    background-color: rgba(86, 164, 216, 0.355);
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px rgba(77, 16, 158, 0.6), -5px 5px 50px rgba(77, 16, 158, 0.6);
+    border-top: 3px solid rgba(255, 255, 255, 0.9);
+    padding: 20px 10%;
+}
+
+.main-card {
+    position: relative;
+    top: 120px;
+    left: calc((100% - 1000px)/2);
+    width: 1000px;
+    height: 550px;
+    transition: left 0.4s;
+    animation: mainCardfadeSlide 2s ease 0.1s;
+}
+
+.main-card.is-active {
+    left: 28%;
+}
+
+.side-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 550px;
+    width: 250px;
+    top: 120px;
+    transition: 0.4s;
+    transform: translateX(-330px);
+    z-index: 95;
+}
+
+.side-card .up {
+    text-align: center;
+    color: azure;
+    font-size: 1.75rem;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 30px;
+    border-bottom: 2px solid white;
+}
+
+.side-card.is-active {
+    transform: translateX(16px);
+}
+
+.content-main {
+    width: 100%;
+}
+
+.content-main .mathi-ko-heading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.content-main .lower-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.head-content {
+    text-align: center; 
+    background: linear-gradient(to right, #8d1ddd, #9a1fe4, #a722ea, #b424f1, #c127f7, #b335f3, #a43fee, #9746e9, #6e4bd3, #4b4bba, #2e469d, #1c3f7f); 
+    font-size: 3.5rem; 
+    font-weight: 700;
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.second-container {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 800px;
+    border: none;
+    border-bottom:5px green solid;
+}
+
+.contained-card {
+    height: 500px;
+    width: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    background-color: black;
+    width: 100%;
+    border: none;
+}
+
+.cards {
+  display: flex;
+  height: 100%;
+  max-width: auto;
+  width: calc(100% - 20px);
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-size: contain;
+  border: 4px solid whitesmoke;
+  border-radius: 18px;
+  height: 480px;
+  opacity: 0.5;
+  width: 280px;
+  background-color: gray;
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  width: 440px;
+  opacity: 1;
+}
+
+.card-1 {
+  background-image: url(pic/normal1.jpg);
+}
+.card-2 {
+  background-image: url(pic/normal2.jpg);
+}
+.card-3 {
+  background-image: url(pic/normal3.jpg);
+}
+.card-4 {
+  background-image: url(pic/normal4.jpg);
+}

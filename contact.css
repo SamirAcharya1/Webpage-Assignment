@@ -1,0 +1,71 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgba(6, 78, 59, 0.18);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid rgba(255, 255, 255, 0.9);   
+    box-shadow: 5px 5px 20px rgba(6, 78, 59, 0.6), -5px 5px 20px rgba(6, 78, 59, 0.6);
+}
+
+h1 {
+    text-align: center;
+    color: azure;
+}
+
+.contact-form {
+    margin-top: 30px;
+    
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: azure;
+}
+
+.form-group input[type="text"], 
+.form-group input[type="email"], 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid azure;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color:rgba(6, 78, 59, 0.18);
+    color: azure;
+
+    
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #4CAF50;
+    width: 500px;
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    left: 350px;
+     
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.container{
+    position: relative;
+    top:120px;
+}

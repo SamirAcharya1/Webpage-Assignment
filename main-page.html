@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="keyframes.css">
+    <link rel="stylesheet" href="headerstyles.css">
+    <link rel="stylesheet" href="main-styles.css">
+    <link rel="stylesheet" href="magic-mouse.css">
+    <script src="main.js"></script>
+    <script src="magic-mouse.js"></script>
+    <script>
+            window.onload = function () {
+        const menu_btn = document.querySelector('.hamburger')
+        const main_card = document.querySelector('.main-card')
+        const side_card = document.querySelector('.side-card')
+
+        menu_btn.addEventListener('click', function () {
+            menu_btn.classList.toggle('is-active');
+            main_card.classList.toggle('is-active');
+            side_card.classList.toggle('is-active');
+        })
+        }
+    </script>
+</head>
+<body>
+    <div class="header" id="home">
+        <header>
+            <div class="log" style="display: flex; gap: 25px;">
+                <button class="hamburger ">
+                    <div class="bar"></div>
+                </button>
+                <p>Portfolio</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="main-page.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main-card card1">
+            <div class="content-main">
+                <p class="mathi-ko-heading">Hello world</p>
+                <p class="mathi-ko-heading">Lead for Nepal, Live for God.</p>
+                <hr><br><br>
+                <p class="lower-heading">
+                    An website just made for fun.
+                </p>
+                <br><br>
+                <p class="lower-heading">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+
+        <div class="side-card card1 ">
+            <p class="up">Topics</p>
+            <nav class="side-one" style="text-align: center;">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#photo">Photos</a></li>
+                <li><a href=""></a></li>
+            </nav>
+        </div>
+
+    </div>
+    <div class="second-container" id="introduction">
+        <div class="card1 contained-card">
+            <p class="head-content">Introduction to the Extra Content</p><hr><br><br>
+            <p style="text-align: center; color: rgb(255, 255, 255); font-size: 2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio optio repellendus dolorum unde! Quisquam pariatur, quaerat laudantium, nam suscipit vero est tenetur, sapiente quae laboriosam iure fugit in corrupti repellat?</p>
+        </div>
+    </div>
+    <div class="wrapper" id="photo">
+        <div class="cards">
+            <div class="card card-1"></div>
+            <div class="card card-2"></div>
+            <div class="card card-3"></div>
+            <div class="card card-4"></div>
+          </div>
+    </div>
+</body>
+</html>

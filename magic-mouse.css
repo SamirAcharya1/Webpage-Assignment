@@ -1,0 +1,9 @@
+:root {
+  --glow-rgb: 16 185 129;
+}
+
+.glow-point {
+  position: absolute;
+  box-shadow: 0rem 0rem 5rem 0.6rem rgb(var(--glow-rgb));
+  pointer-events: none;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="magic-mouse.css">
+    <link rel="stylesheet" href="headerstyles.css">
+    <script src="magic-mouse.js"></script>
+    <script>
+         window.onload = function () {
+            const menu_btn = document.querySelector('.hamburger')
+            const side_card = document.querySelector('.side-card')
+            const main_card = document.querySelector('.main-card')
+
+            menu_btn.addEventListener('click', function () {
+                menu_btn.classList.toggle('is-active');
+                side_card.classList.toggle('is-active');
+                main_card.classList.toggle('is-active');
+            })
+        }
+    </script>
+    <style>
+    body {
+        background-image: url(forest3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+    .side-card {
+        position: fixed;
+        min-height: 300px;
+        height: calc(100vh - 150px);
+        width: 250px;
+        top: 120px;
+        transition: 0.4s;
+        transform: translateX(-330px);
+    }
+
+    .side-card.is-active {
+        transform: translateX(16px);
+    }
+
+    .main-card {
+        position: fixed;
+        top: 120px;
+        left: 16px;
+        width: calc(100% - 32px);
+        height: calc(100vh - 150px);
+        transition: 0.4s;
+    }
+
+    .main-card.is-active {
+        width: calc(100% - 362px);
+        transform: translateX(330px);
+    }
+
+    .card1 {
+        border: 1.5px solid rgba(255, 255, 255, 0.3);
+        border-radius: 20px;
+        background-color: rgba(198, 208, 205, 0.152);
+        backdrop-filter: blur(4px);
+        box-shadow: 5px 5px 20px rgba(6, 78, 59, 0.6), -5px 5px 20px rgba(6, 78, 59, 0.6);
+        border-top: 3px solid rgba(255, 255, 255, 0.9);
+        padding: 20px 10%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    li , a, header p{
+        color: azure;
+    }
+    .main-card .main-content {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: black;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="log" style="display: flex; gap: 25px;">
+            <button class="hamburger ">
+                <div class="bar"></div>
+            </button>
+            <p>Portfolio</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="main-page.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" style="width: 100vh; height: 100vh;">
+        <div class="side-card card1"></div>
+        <div class="main-card card1">
+            <h2>About Me</h2><hr><br><br>
+            <p class="main-content">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas neque facere ipsum nam in ut repellendus quisquam delectus.
+            </p>
+            <p class="main-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+            <p class="main-content">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis mollitia quidem,
+            </p>
+        </div>
+    </div>
+        
+
+    
+</body>
+</html>
