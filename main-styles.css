@@ -56,7 +56,8 @@ body {
     height: 550px;
     width: 250px;
     top: 120px;
-    transition: 0.4s;
+    opacity: 0;
+    transition: all 0.4s;
     transform: translateX(-330px);
     z-index: 95;
 }
@@ -73,6 +74,7 @@ body {
 
 .side-card.is-active {
     transform: translateX(16px);
+    opacity: 1;
 }
 
 .content-main {
